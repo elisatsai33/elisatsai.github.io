@@ -140,7 +140,18 @@
 
 
    <!-- 卡片內容 -->
-    <div class="container">
+
+ <div class="accordion" id="myAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading1">
+            <button type="button" class="accordion-button" data-bs-toggle="collapse" 
+              data-bs-target="#collapse1">課堂作業</button>
+          </h2>
+          <div id="collapse1" class="accordion-collapse collapse show"
+            data-bs-parent="#myAccordion">
+            <div class="accordion-body">
+
+		 <div class="container">
         <div class="row">
             <div class="card col-2">
                 <img src="pic/i1.png" alt="Avatar">
@@ -193,6 +204,47 @@
 		
         </div>
     </div>
+		    
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading2">
+            <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
+              data-bs-target="#collapse2">關於我</button>
+          </h2>
+          <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+            <div class="accordion-body">
+              <p>特殊經歷：
+		日本京都﻿藝術大學研修參加證書
+		2022國泰卓越獎助計畫 青年志工環境永續行動團隊
+		英國短期遊學 Language in action Junior Programmes
+		全國大專院校暨高中職StoryMap校園競賽參賽證明
+		      
+		軟體技能：
+		Blender 3D 建模
+		Nomad sculpt 建模
+		Clip 繪圖軟體
+		Photoshop
+                </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading3">
+            <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" 
+              data-bs-target="#collapse3">作品展示</button>
+          </h2>
+          <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+            <div class="accordion-body">
+              <p>風
+                </p>
+            </div>
+          </div>
+        </div>
+      </div>
+	
+   
 
     <hr>
     <!-- 返回頂部按鈕 -->
