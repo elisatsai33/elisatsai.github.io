@@ -74,6 +74,80 @@
             background-color: #a52a2a; /* 稍淺的紅色 */
         }
     </style>
+
+	<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>分頁與課堂作業展示</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        /* 分頁設計 */
+        .tab-menu {
+            display: flex;
+            justify-content: center;
+            background-color: #800020; /* 酒紅色 */
+            padding: 10px 0;
+        }
+
+        .tab-item {
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #800020; /* 分頁背景 */
+            transition: background-color 0.3s ease;
+        }
+
+        .tab-item:hover {
+            background-color: #a52a2a; /* hover 效果 */
+        }
+
+        /* 卡片樣式 */
+        .card {
+            margin: 15px;
+            text-align: center;
+            background-color: #f8f9fa;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .card img {
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+        }
+
+        .card button {
+            background-color: #800020;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            cursor: pointer;
+            font-size: 14px;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+
+        .card button:hover {
+            background-color: #a52a2a;
+        }
+
+        .accordion-button {
+            background-color: #800020 !important;
+            color: white !important;
+        }
+
+        .accordion-button:hover {
+            background-color: #a52a2a !important;
+        }
+    </style>
+	
 </head>
 <body>
     <!-- 固定於頂部的導覽列 -->
@@ -138,95 +212,108 @@
     </button>
 </div>
 
-
-   <!-- 卡片內容 -->
-
-
-                <img src="pic/i2.png" alt="Avatar">
-                <button onclick="location.href='./1022/index.html'">唐詩</button>
-                <h2>1022</h2>
-            </div>
-            <div class="card col-2">
-                <img src="pic/i2.png" alt="Avatar">
-                <button onclick="location.href='./1105/index.html'">五首唐詩</button>
-                <h2>1105</h2>
-            </div>
-            <div class="card col-2">
-                <img src="pic/i3.png" alt="Avatar">
-                <button onclick="location.href='./1112/index.html'">我的生活照</button>
-                <h2>1112</h2>
-            </div>
-		<div class="card col-2">
-                <img src="pic/i4.png" alt="Avatar">
-                <button onclick="location.href='./1126/index.html'">元件練習(一)</button>
-                <h2>1126</h2>
-            </div>
-
-		<div class="card col-2">
-                <img src="pic/i5.png" alt="Avatar">
-                <button onclick="location.href='./1126(bonus)/index.html'">元件練習(加分一)</button>
-                <h2>1126(bonus)</h2>
-            </div>
-
-		<div class="card col-2">
-                <img src="pic/i4.png" alt="Avatar">
-                <button onclick="location.href='./1203/index.html'">元件練習(二)</button>
-                <h2>1203</h2>
-            </div>
-
-		<div class="card col-2">
-                <img src="pic/i5.png" alt="Avatar">
-                <button onclick="location.href='./1203(bonus)/index.html'">元件練習(加分二)</button>
-                <h2>1203(bonus)</h2>
-            </div>
-		
-        </div>
-    </div>
-		    
-            </div>
-          </div>
-        </div>
 	
-        <div class="accordion-item">
-	  <h2 class="accordion-header" id="heading2">
-	    <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapse2">
-    		關於我
-   		</button>
- 	 </h2>
-	<div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
-	<div class="accordion-body">
-      <p><strong>特殊經歷：</strong></p>
-      <ul>
-        <li>日本京都藝術大學研修參加證書</li>
-        <li>2022 國泰卓越獎助計畫青年志工環境永續行動團隊</li>
-        <li>英國短期遊學 Language in Action Junior Programmes</li>
-        <li>全國大專院校暨高中職 StoryMap 校園競賽參賽證明</li>
-      </ul>
-      
-      <p><strong>軟體技能：</strong></p>
-      <ul>
-        <li>Blender 3D 建模</li>
-        <li>Nomad Sculpt 建模</li>
-        <li>Clip 繪圖軟體</li>
-        <li>Photoshop</li>
-      </ul>
+<!-- 分頁 -->
+    <div class="tab-menu">
+        <div class="tab-item">課堂作業</div>
+        <div class="tab-item">關於我</div>
+        <div class="tab-item">作品展示</div>
     </div>
-  </div>
-</div>
 
+    <!-- 分頁內容 -->
+    <div class="accordion container mt-4" id="myAccordion">
+        <!-- 課堂作業 -->
         <div class="accordion-item">
-          <h2 class="accordion-header" id="heading3">
-            <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" 
-              data-bs-target="#collapse3">作品展示</button>
-          </h2>
-          <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
-            <div class="accordion-body">
-              <p>風
-                </p>
+            <h2 class="accordion-header" id="heading1">
+                <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+                    課堂作業
+                </button>
+            </h2>
+            <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#myAccordion">
+                <div class="accordion-body">
+                    <!-- 卡片內容 -->
+                    <div class="row">
+                        <div class="card col-md-3">
+                            <img src="pic/i2.png" alt="唐詩">
+                            <button onclick="location.href='./1022/index.html'">唐詩</button>
+                            <h2>1022</h2>
+                        </div>
+                        <div class="card col-md-3">
+                            <img src="pic/i2.png" alt="五首唐詩">
+                            <button onclick="location.href='./1105/index.html'">五首唐詩</button>
+                            <h2>1105</h2>
+                        </div>
+                        <div class="card col-md-3">
+                            <img src="pic/i3.png" alt="我的生活照">
+                            <button onclick="location.href='./1112/index.html'">我的生活照</button>
+                            <h2>1112</h2>
+                        </div>
+                        <div class="card col-md-3">
+                            <img src="pic/i4.png" alt="元件練習(一)">
+                            <button onclick="location.href='./1126/index.html'">元件練習(一)</button>
+                            <h2>1126</h2>
+                        </div>
+                        <div class="card col-md-3">
+                            <img src="pic/i5.png" alt="元件練習(加分一)">
+                            <button onclick="location.href='./1126(bonus)/index.html'">元件練習(加分一)</button>
+                            <h2>1126(bonus)</h2>
+                        </div>
+                        <div class="card col-md-3">
+                            <img src="pic/i4.png" alt="元件練習(二)">
+                            <button onclick="location.href='./1203/index.html'">元件練習(二)</button>
+                            <h2>1203</h2>
+                        </div>
+                        <div class="card col-md-3">
+                            <img src="pic/i5.png" alt="元件練習(加分二)">
+                            <button onclick="location.href='./1203(bonus)/index.html'">元件練習(加分二)</button>
+                            <h2>1203(bonus)</h2>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
+
+        <!-- 關於我 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading2">
+                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapse2">
+                    關於我
+                </button>
+            </h2>
+            <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                <div class="accordion-body">
+                    <p><strong>特殊經歷：</strong></p>
+                    <ul>
+                        <li>日本京都藝術大學研修參加證書</li>
+                        <li>2022 國泰卓越獎助計畫青年志工環境永續行動團隊</li>
+                        <li>英國短期遊學 Language in Action Junior Programmes</li>
+                        <li>全國大專院校暨高中職 StoryMap 校園競賽參賽證明</li>
+                    </ul>
+                    <p><strong>軟體技能：</strong></p>
+                    <ul>
+                        <li>Blender 3D 建模</li>
+                        <li>Nomad Sculpt 建模</li>
+                        <li>Clip 繪圖軟體</li>
+                        <li>Photoshop</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 作品展示 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading3">
+                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapse3">
+                    作品展示
+                </button>
+            </h2>
+            <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                <div class="accordion-body">
+                    <p>風</p>
+                </div>
+            </div>
+        </div>
+    </div>
 	
    
 
