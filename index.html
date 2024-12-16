@@ -211,133 +211,113 @@
 
 	
 <!-- 分頁 -->
-    <div class="tab-menu">
-        <div class="tab-item">課堂作業</div>
-        <div class="tab-item">關於我</div>
-    </div>
+<div class="tab-menu">
+    <div class="tab-item">課堂作業</div>
+    <div class="tab-item">關於我</div>
+</div>
 
-    <!-- 分頁內容 -->
-    <div class="accordion container mt-4" id="myAccordion">
-        <!-- 課堂作業 -->
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="heading1">
-                <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapse1">
-                    課堂作業
-                </button>
-            </h2>
-            <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#myAccordion">
-                <div class="accordion-body">
-                    <!-- 卡片內容 -->
-                    <div class="row">
-			<div class="card col-md-3">
-                            <img src="pic/i1.png" alt="我的名片(一)">
-                            <button onclick="location.href='./1008/index.html'">我的名片(一)</button>
-                            <h2>1008</h2>
-                        </div>
-			<div class="card col-md-3">
-                            <img src="pic/i1.png" alt="我的名片(二)">
-                            <button onclick="location.href='./1015/index.html'">我的名片(二)</button>
-                            <h2>1015</h2>
-                        </div>
-                        <div class="card col-md-3">
-                            <img src="pic/i2.png" alt="唐詩">
-                            <button onclick="location.href='./1022/index.html'">唐詩</button>
-                            <h2>1022</h2>
-                        </div>
-                        <div class="card col-md-3">
-                            <img src="pic/i2.png" alt="五首唐詩">
-                            <button onclick="location.href='./1105/index.html'">五首唐詩</button>
-                            <h2>1105</h2>
-                        </div>
-                        <div class="card col-md-3">
-                            <img src="pic/i3.png" alt="我的生活照">
-                            <button onclick="location.href='./1112/index.html'">我的生活照</button>
-                            <h2>1112</h2>
-                        </div>
-                        <div class="card col-md-3">
-                            <img src="pic/i4.png" alt="元件練習(一)">
-                            <button onclick="location.href='./1126/index.html'">元件練習(一)</button>
-                            <h2>1126</h2>
-                        </div>
-                        <div class="card col-md-3">
-                            <img src="pic/i5.png" alt="元件練習(加分一)">
-                            <button onclick="location.href='./1126(bonus)/index.html'">元件練習(加分一)</button>
-                            <h2>1126(bonus)</h2>
-                        </div>
-                        <div class="card col-md-3">
-                            <img src="pic/i4.png" alt="元件練習(二)">
-                            <button onclick="location.href='./1203/index.html'">元件練習(二)</button>
-                            <h2>1203</h2>
-                        </div>
-                        <div class="card col-md-3">
-                            <img src="pic/i5.png" alt="元件練習(加分二)">
-                            <button onclick="location.href='./1203(bonus)/index.html'">元件練習(加分二)</button>
-                            <h2>1203(bonus)</h2>
-                        </div>
+<!-- 分頁內容 -->
+<div class="accordion container mt-4" id="myAccordion">
+    <!-- 課堂作業 -->
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="heading1">
+            <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseClassWork">
+                課堂作業
+            </button>
+        </h2>
+        <div id="collapseClassWork" class="accordion-collapse collapse show" data-bs-parent="#myAccordion">
+            <div class="accordion-body">
+                <!-- 卡片內容 -->
+                <div class="row">
+                    <div class="card col-md-3">
+                        <img src="pic/i1.png" alt="我的名片(一)">
+                        <button onclick="location.href='./1008/index.html'">我的名片(一)</button>
+                        <h2>1008</h2>
+                    </div>
+                    <div class="card col-md-3">
+                        <img src="pic/i1.png" alt="我的名片(二)">
+                        <button onclick="location.href='./1015/index.html'">我的名片(二)</button>
+                        <h2>1015</h2>
+                    </div>
+                    <div class="card col-md-3">
+                        <img src="pic/i2.png" alt="唐詩">
+                        <button onclick="location.href='./1022/index.html'">唐詩</button>
+                        <h2>1022</h2>
+                    </div>
+                    <div class="card col-md-3">
+                        <img src="pic/i2.png" alt="五首唐詩">
+                        <button onclick="location.href='./1105/index.html'">五首唐詩</button>
+                        <h2>1105</h2>
+                    </div>
+                    <div class="card col-md-3">
+                        <img src="pic/i3.png" alt="我的生活照">
+                        <button onclick="location.href='./1112/index.html'">我的生活照</button>
+                        <h2>1112</h2>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- 關於我 -->
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="heading2">
-                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapse2">
-                    關於我
-                </button>
-            </h2>
-            <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
-                <div class="accordion-body">
-                    <p><strong>特殊經歷：</strong></p>
-                    <ul>
-                        <li>日本京都藝術大學研修參加證書</li>
-                        <li>2022 國泰卓越獎助計畫青年志工環境永續行動團隊</li>
-                        <li>英國短期遊學 Language in Action Junior Programmes</li>
-                        <li>全國大專院校暨高中職 StoryMap 校園競賽參賽證明</li>
-                    </ul>
-                    <p><strong>軟體技能：</strong></p>
-                    <ul>
-                        <li>Blender 3D 建模</li>
-                        <li>Nomad Sculpt 建模</li>
-                        <li>Clip 繪圖軟體</li>
-                        <li>Photoshop</li>
-                    </ul>
+    <!-- 關於我 -->
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="heading2">
+            <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseAboutMe">
+                關於我
+            </button>
+        </h2>
+        <div id="collapseAboutMe" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+            <div class="accordion-body">
+                <p><strong>特殊經歷：</strong></p>
+                <ul>
+                    <li>日本京都藝術大學研修參加證書</li>
+                    <li>2022 國泰卓越獎助計畫青年志工環境永續行動團隊</li>
+                    <li>英國短期遊學 Language in Action Junior Programmes</li>
+                    <li>全國大專院校暨高中職 StoryMap 校園競賽參賽證明</li>
+                </ul>
+                <p><strong>軟體技能：</strong></p>
+                <ul>
+                    <li>Blender 3D 建模</li>
+                    <li>Nomad Sculpt 建模</li>
+                    <li>Clip 繪圖軟體</li>
+                    <li>Photoshop</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 作品展示 -->
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="heading3">
+            <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapsePortfolio">
+                作品展示
+            </button>
+        </h2>
+        <div id="collapsePortfolio" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+            <div class="accordion-body">
+                <!-- 卡片內容 -->
+                <div class="row">
+                    <div class="card col-md-4">
+                        <img src="pic/i7.png" alt="立體作品">
+                        <button onclick="location.href='./1217-1/index.html'">立體作品</button>
+                        <h2>1217-1</h2>
+                    </div>
+                    <div class="card col-md-4">
+                        <img src="pic/i8.png" alt="平面作品">
+                        <button onclick="location.href='./1217-2/index.html'">平面作品</button>
+                        <h2>1217-2</h2>
+                    </div>
+                    <div class="card col-md-4">
+                        <img src="pic/i6.png" alt="其他">
+                        <button onclick="location.href='./1217-3/index.html'">其他</button>
+                        <h2>1217-3</h2>
+                    </div>
                 </div>
             </div>
         </div>
-	    
-	<!-- 作品展示 -->
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="heading2">
-                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapse2">
-                    作品展示
-                </button>
-            </h2>
-		<div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#myAccordion">
-                <div class="accordion-body">
-		 <!-- 卡片內容 -->
-                    <div class="row">
-			<div class="card col-md-4">
-                            <img src="pic/i7.png" alt="立體作品">
-                            <button onclick="location.href='./1217-1/index.html'">立體作品</button>
-                            <h2>1217-1</h2>
-                        </div>
-			<div class="card col-md-4">
-                            <img src="pic/i8.png" alt="平面作品">
-                            <button onclick="location.href='./1217-2/index.html'">平面作品</button>
-                            <h2>1217-2</h2>
-                        </div>
-                        <div class="card col-md-4">
-                            <img src="pic/i6.png" alt="其他">
-                            <button onclick="location.href='./1217-3/index.html'">其他</button>
-                            <h2>1217-3</h2>
-                        </div>
-		</div>
-            </div>
-	 </div>
-       
     </div>
-	
+</div>
+
    
 
     <hr>
